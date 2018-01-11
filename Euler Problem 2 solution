@@ -1,0 +1,12 @@
+var n = 1;
+var x = 1;
+var c = 0;
+var total;
+while (c < 4000000) {
+  c = n + x;
+  n = x;
+  x = c;
+	if (c % 2 === 0 && c <= 4000000) {
+		total += c;
+	}
+}
